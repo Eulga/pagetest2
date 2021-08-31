@@ -1,0 +1,103 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 초기화 */
+body, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd, p{margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+hr {display: none;}
+.hidden {position: absolute; left: -999px;}
+address {font-style: normal;}
+small {font-size: 1em;}
+/* 공통적용 */
+body {font-family: 'IBMPlexSansKR-Regular'; }
+h1 {font-family: "twayair"; text-transform: uppercase;}
+a {color: #000}
+/* 헤더 */
+#header {
+    margin: 0 auto;
+    height: 200px; width: 1100px;
+}
+#header h1 {
+    margin: 100px 0 0 50px ;
+    float: left;
+}
+#header h1 a {
+    display: block;
+    width: 249px; height: 50px;
+    background: url(../images/logo.png) no-repeat center;
+    text-indent: -9999px;
+}
+/* gnb */
+#gnb_member {position: relative;}
+#gnb_member ul {position: absolute; top: 30px; right: 80px}
+#gnb_member ul li {float: left; text-align: center;}
+#gnb_member ul li a {display: block; width: 60px;}
+.goLogin {border-right: 1px solid #000;}
+.goJoin {}
+#gnb {}
+#gnb ul {float: right; margin: 100px 50px 0 0;}
+#gnb ul li {float: left; line-height: 50px; margin-left: 30px;}
+#gnb ul li a {
+    text-transform: uppercase;
+    display: block;
+    height: 40px; 
+}
+#gnb ul li a:hover {border-bottom: 3px solid rgb(0, 191, 243);}
+/* 슬로건섹션 slogan -> slider*/
+#slogan {
+    height: 400px; background: chartreuse; min-width: 1100px;
+    /* position: relative; */
+    }
+#slogan p {
+    /* position: absolute; top: 20px; left: calc(50%); */
+    box-sizing: border-box;
+    padding: 50px 0 30px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+#slogan a {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background: rgb(239, 70, 77);
+    color: #fff;
+    font-size: 24px;
+    width: 180px;
+    line-height: 40px;
+}
+/* 메인 */
+#solutionWrap {
+    height: 300px;
+    background: rgb(235, 235, 235);
+}
+#solution {
+    margin: 0 auto;
+    height: 300px; width: 1100px;
+    background: url(../images/bgSolution.png) no-repeat center;
+    position: relative;
+}
+.solution{width: 200px; position: absolute; top: 70px; left: 0;}
+.solution a h3 {font-size: 15px; padding-bottom: 5px;}
+.solution a p {font-size: 12px;}
+.hosting {left: 190px;}
+.security {left: 500px;}
+.payment {left: 810px;}
+/* board */
+#board {height: 300px;}
+
+/* security news */
+
+/* news notice */
